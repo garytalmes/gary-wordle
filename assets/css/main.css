@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  padding: 5% 15%;
+  background-color: #dedede;
+}
+
+div#viewport {
+  position: relative;
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 2.5em 12px 12px 12px;
+  min-height: 500px;
+}
+
+button {
+  display: block;
+  padding: .3em 1.5em;
+  background-color: #dedede;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button#play {
+  position: absolute;
+  top: -.9em;
+  right: 1em;
+}
+
+button#submit {
+  display: none;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+div#viewport h1 {
+  position: absolute;
+  top: -1em;
+  left: 1em;
+  width: auto;
+  padding: .4em 1em;
+  background-color: #dedede;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -.5px;
+}
+
+div#game-board-here {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.game-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+div.letter-box {
+  width: 20%;
+  height: 128px;
+  border: 1px solid #333;
+  background-color: #333;
+  border: 1px solid #eee;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div.letter-box.right-letter {
+  background-color: yellow;
+}
+
+div.letter-box.right-letter.right-place {
+  background-color: green;
+}
+
+div.letter-box span {
+  font-family: Tahoma, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 120px;
+  vertical-align: middle;
+  color: white;
+}
